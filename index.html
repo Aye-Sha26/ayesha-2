@@ -1,11 +1,4 @@
-import java.io.FileWriter;
-import java.io.IOException;
 
-public class App {
-
-    public static void main(String[] args) {
-
-        String htmlContent = """
         <!DOCTYPE html>
         <html>
         <head>
@@ -67,17 +60,4 @@ public class App {
 
         </body>
         </html>
-        """;
-
-        try {
-            FileWriter writer = new FileWriter("index.html");
-            writer.write(htmlContent);
-            writer.close();
-
-            System.out.println("HTML webpage generated successfully.");
-
-        } catch (IOException e) {
-            System.out.println("Error writing HTML file.");
-        }
-    }
-}
+      
